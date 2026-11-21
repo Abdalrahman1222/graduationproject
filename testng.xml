@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+
+<suite name="Automation Test Suite" parallel="tests" thread-count="3">
+
+    <listeners>
+        <listener class-name="io.qameta.allure.testng.AllureTestNg"/>
+        <listener class-name="listeners.TestListener"/>
+    </listeners>
+
+    <test name="Login Tests">
+        <classes>
+            <class name="login.LoginTests"/>
+        </classes>
+    </test>
+
+    <test name="PIM Tests">
+        <classes>
+            <class name="pim.PIMTests"/>
+        </classes>
+    </test>
+
+    <test name="Admin Tests">
+        <classes>
+            <class name="admin.AdminTests"/>
+        </classes>
+    </test>
+
+    <test name="Footer Tests">
+        <classes>
+            <class name="footer.FooterTests"/>
+        </classes>
+    </test>
+
+    <test name="Sidebar Tests">
+        <classes>
+            <class name="sidebar.SidebarTests"/>
+        </classes>
+    </test>
+
+</suite>
